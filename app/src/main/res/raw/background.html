@@ -1,0 +1,879 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0099)https://freesound.org/search/?q=Fairground+music&f=tag%3A%22ambience%22&s=score+desc&advanced=0&g=1 -->
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <meta name="description" content="Freesound: collaborative database of creative-commons licensed sound for musicians and sound lovers. Have you freed your sound today?">
+        <meta name="keywords" content="free, sound">
+        <link rel="stylesheet" type="text/css" href="./FairMusic_files/all.css">
+        <!--[if IE 6]><link rel="stylesheet" type="text/css" href="/media/css/ie6.css?v=0303" /><![endif]-->
+        <link rel="icon" href="https://freesound.org/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://freesound.org/apple-touch-icon.png">
+	<link rel="manifest" href="https://freesound.org/site.webmanifest">
+	<link rel="mask-icon" href="https://freesound.org/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
+        <title>Freesound - sound search</title>
+        <script type="text/javascript" async="" src="./FairMusic_files/ga.js.download"></script><script src="./FairMusic_files/jquery-1.5.2.min.js.download" type="text/javascript"></script>
+        <script src="./FairMusic_files/jquery-ui-1.8.11.custom.min.js.download" type="text/javascript"></script>
+        <script src="./FairMusic_files/jquery.cookie.js.download" type="text/javascript"></script>
+        <script src="./FairMusic_files/swfobject.js.download" type="text/javascript"></script>
+        <script src="./FairMusic_files/jquery.watermarkinput.js.download" type="text/javascript"></script>
+        <script type="text/javascript">
+            var isLoggedIn = false;
+            var loginUrl = "/home/login/?next=/search/";
+            $(document).ready(function() {
+                 $("#search input[name=q]").Watermark("search sounds");
+            });
+            function clearWatermark(){
+			   $.Watermark.HideAll()
+			   return true
+			}
+        </script>
+        <script src="./FairMusic_files/freesound.js.download" type="text/javascript"></script>
+    	<script src="./FairMusic_files/ajax_utils.js.download" type="text/javascript"></script>
+        <!-- next couple of lines are used for the HTML player -->
+        <link href="./FairMusic_files/css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="./FairMusic_files/player.css">
+        <script src="./FairMusic_files/soundmanager2.js.download"></script>
+        <script type="text/javascript" src="./FairMusic_files/player.js.download"></script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-86270-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+        
+    </head>
+
+    <body id="" onload="" onunload="">
+
+        
+
+
+        <div id="header">
+            <div id="account_nav">
+                
+                    <a href="https://freesound.org/home/register/">Register</a>
+                    <a href="https://freesound.org/home/login/?next=/search/">Log In</a>
+                
+            <a href="https://freesound.org/home/upload/" id="upload_button"></a>
+        </div>
+
+        <a href="https://freesound.org/" id="logo"></a>
+
+        <div id="search">
+        <form method="get" onsubmit="return clearWatermark()" action="https://freesound.org/search/">
+            <fieldset>
+               <input type="text" name="q" value="" size="30" style="color: rgb(170, 170, 170);">
+               <input type="submit" value="" id="search_submit">
+            </fieldset>
+        </form>
+        </div>
+
+        <ul id="site_nav">
+            
+            <li class="active_tab"><a href="https://freesound.org/browse/" id="site_nav_sounds"><span class="site_nav_icon"></span>Sounds</a></li>
+            <li class=""><a href="https://freesound.org/forum/" id="site_nav_forums"><span class="site_nav_icon"></span>Forums</a></li>
+            <li class=""><a href="https://freesound.org/people/" id="site_nav_people"><span class="site_nav_icon"></span>People</a></li>
+            <li class=""><a href="https://freesound.org/help/faq/" id="site_nav_help"><span class="site_nav_icon"></span>Help</a></li>
+
+        </ul>
+    </div>
+
+        <div id="wrapper">
+        <div id="container">
+
+        
+
+        
+<div id="content_full"> <!-- START of Content area -->
+
+
+<form id="search_form" method="get" onsubmit="return addAdvancedSearchOptionsFilters()" action="https://freesound.org/search/">
+    <fieldset>
+
+       <input id="query_input" type="text" name="q" value="Fairground music" size="30">
+       <input id="filter_query" type="hidden" name="f" value="tag:&quot;ambience&quot;" size="30">
+       
+       <select name="s">
+            
+            <option value="score desc" selected="selected">Automatic by relevance</option>
+            
+            <option value="duration desc">Duration (long first)</option>
+            
+            <option value="duration asc">Duration (short first)</option>
+            
+            <option value="created desc">Date added (newest first)</option>
+            
+            <option value="created asc">Date added (oldest first)</option>
+            
+            <option value="num_downloads desc">Downloads (most first)</option>
+            
+            <option value="num_downloads asc">Downloads (least first)</option>
+            
+            <option value="avg_rating desc">Rating (highest first)</option>
+            
+            <option value="avg_rating asc">Rating (lowest first)</option>
+            
+       </select>
+
+       <input type="submit" value="search" id="search_submit">
+
+       <script type="text/javascript">
+
+    function showAdvancedSearchOptions()
+    {
+        $("#advanced_search_hidden").val(1);
+        $("#enableShowButton").hide();
+        $("#advanced_search_options").show('blind', {}, 500, function() {});
+
+    }
+
+    function hideAdvancedSearchOptions()
+    {
+        $("#advanced_search_hidden").val(0);
+        $("#advanced_search_options").hide('blind', {}, 500, function() {});
+        $("#enableShowButton").show();
+    }
+
+    function set_hidden_grouping_value(){
+        if ($("#grouping_geotagged").is(':checked')){
+            $("#grouping_geotagged_hidden").val("1")
+        }else{
+            $("#grouping_geotagged_hidden").val("")
+        }
+    }
+
+</script>
+
+
+<div id="advanced_search_options" class="advanced_search_options" style="display:none">
+<input id="advanced_search_hidden" type="hidden" name="advanced" value="0">
+
+<div style="margin-top:8px;"></div>Search in:&nbsp;
+<label><input type="checkbox" name="a_tag" value="1"> Tags</label>&nbsp;&nbsp;
+<label><input type="checkbox" name="a_filename" value="1"> File names</label>&nbsp;&nbsp;
+<label><input type="checkbox" name="a_description" value="1"> Descriptions</label>&nbsp;&nbsp;
+<label><input type="checkbox" name="a_packname" value="1"> Pack names</label>&nbsp;&nbsp;
+<label><input type="checkbox" name="a_soundid" value="1"> Sound Ids</label>&nbsp;&nbsp;
+<label><input type="checkbox" name="a_username" value="1"> User names</label>
+<span class="advanced_search_indication">(if none is selected, all will be used)</span>
+<br>
+
+Duration between <input class="inputtext" id="filter_duration_min" value="0" size="6"> <label for="filter_duration_min">(min)</label>
+and <input class="inputtext" id="filter_duration_max" value="*" size="6"> <label for="filter_duration_max">(max)</label> seconds<br>
+<input id="filter_is_geotagged" type="checkbox" value="1"> <label for="filter_is_geotagged">Only geotagged sounds</label><br>
+<input id="grouping_geotagged" type="checkbox" onchange="set_hidden_grouping_value()" checked=""> <label for="grouping_geotagged">Group sounds by pack</label>
+<input id="grouping_geotagged_hidden" type="hidden" name="g" value="1">
+
+<br>
+<span class="advanced_search_options_button"><a style="cursor:pointer;" onclick="hideAdvancedSearchOptions();">Hide advanced search options</a></span>
+</div>
+
+<span id="enableShowButton" class="advanced_search_options_button">
+    <div style="margin-top:4px;"></div>
+    <a style="cursor:pointer;" onclick="showAdvancedSearchOptions();">Show advanced search options</a>
+</span>
+
+
+        <br>
+
+    </fieldset>
+</form>
+
+
+<p id="filter_query_display">
+
+
+    <a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=" title="remove this filter">tag:ambience</a>
+
+
+</p>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        // Fill advanced search fields that were passen on the f parameter
+        // Duration
+
+        if (getFilterValue("duration","min") == "")
+            $("#filter_duration_min").val("0");
+        else
+            $("#filter_duration_min").val(getFilterValue("duration","min"));
+
+        if (getFilterValue("duration","max") == "")
+            $("#filter_duration_max").val("*");
+        else
+            $("#filter_duration_max").val(getFilterValue("duration","max"));
+
+        // Geotagged
+        if (getFilterValue("is_geotagged")==1)
+               $("#filter_is_geotagged").attr('checked','checked')
+
+        // Extract terms from the query search box and highlight any of their occurrences in the descriptions
+        terms = document.getElementById("query_input").value.split(" ");
+
+        for(var i=0;i<terms.length;i++)
+        {
+        	term = terms[i];
+        	re = RegExp(term,"i"); // i for case-insensative
+
+        	descriptions = document.getElementsByClassName("description");
+        	for (var j=0;j<descriptions.length;j++)
+        	{
+        		descriptions[j].innerHTML = descriptions[j].innerHTML.replace(re,"<b>"+term+"</b>");
+        	}
+        }
+
+    });
+
+    function addAdvancedSearchOptionsFilters()
+    {
+
+        // Remove existing previously existing advanced options filters (will be replaced by current ones)
+        existing_duration_filter = "duration:[" + getFilterValue("duration","min") + " TO " + getFilterValue("duration","max") + "]"
+        removeFilter(existing_duration_filter)
+        removeFilter("is_geotagged:1")
+
+        // if advanced options is activated add all updated filters
+        if ($("#advanced_search_hidden").val() == 1)
+        {
+
+            // Create and add new filter with all the advanced options
+            filter = ""
+
+            // Duration filter
+            duration_min = parseFloat($("#filter_duration_min").val())
+            duration_max = parseFloat($("#filter_duration_max").val())
+
+            if ((duration_min >= 0.0) || (duration_max >= 0.0))
+            {
+                duration_filter = ""
+
+                if ((duration_min >= 0.0) && (duration_max >= 0.0)) // Both min and max have been set
+                {
+                    if (duration_max < duration_min)
+                    {
+                        // interchange values if duration_min > duration_max
+                        duration_aux = duration_min
+                        duration_min = duration_max
+                        duration_max = duration_aux
+                    }
+
+                    duration_filter = "duration:[" + duration_min + " TO " + duration_max + "]"
+
+                }
+                else if (duration_min >= 0.0) // Only minimum has been set
+                {
+                    duration_filter = "duration:[" + duration_min + " TO *]"
+                }
+                else if (duration_max >= 0.0) // Only maximum has been set
+                {
+                    duration_filter = "duration:[* TO " + duration_max + "]"
+                }
+
+                filter = filter + duration_filter
+            }
+
+            // Is geotagged filter
+            if ($("#filter_is_geotagged").attr('checked')){
+                if (filter != "")
+                    filter = filter + " "
+                filter = filter + "is_geotagged:1"
+            }
+
+               // Update general filter with the advanced options filter
+            value = $("#filter_query").val();
+            if (value != "")
+                $("#filter_query").val(value + " " + filter);
+            else
+                $("#filter_query").val(filter);
+
+        }
+
+        return true
+    }
+
+    // Return the value of a filter given its name
+    // If filter has a range, optional "range" parameter must be set to "min or "max"
+    function getFilterValue(name, range)
+    {
+        if (!range) { range = "min"};
+
+        var value = $("#filter_query").val();
+        position_name = value.search(name)
+        position_value = value.search(name) + (name + ":").length
+        if (value.search((name + ":")) != -1)
+        {
+            if (value[position_value] == "[") // Is range (with spaces)
+            {
+                aux_value = value.substring(position_value + 1)
+                position_end = position_value + aux_value.search("]") + 2
+
+                range_string = value.substring(position_value + 1, position_end -1) // Without [ ]
+                parts = range_string.split(" ")
+                if (range == "min")
+                    return parts[0]
+                else if (range == "max")
+                    return parts[2]
+            }
+            else if (value[position_value] == "\"") // Is string (with spaces)
+            {
+                aux_value = value.substring(position_value + 1)
+                position_end = position_value + aux_value.search("\"") + 2
+                return value.substring(position_value, position_end)
+
+            }
+            else // Is number or normal text (without spaces)
+            {
+                aux_value = value.substring(position_value + 1)
+                if (aux_value.search(" ") != -1)
+                    position_end = position_value + aux_value.search(" ") + 1
+                else
+                    position_end = value.length
+
+                return value.substring(position_value, position_end)
+            }
+        }
+        else
+        {
+            return ""
+        }
+    }
+
+    // Remove a filter given the full tag ex: type:aiff, pack:"pack name"
+    function removeFilter(tag)
+    {
+        var value = $("#filter_query").val();
+        var cleaned = $.trim(value.replace(tag + " ", "").replace(tag, ""));
+        $("#filter_query").val(cleaned);
+    }
+
+</script>
+
+
+    
+    <div id="sidebar" style="float:right">
+        
+
+        
+            <h3>tags</h3>
+            
+
+<p class="search-tagcloud">
+    <span class="facet_item" style="font-size:0.7em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%222016%22">2016</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22ambiance%22">ambiance</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22ambience%22">ambience</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22ambient%22">ambient</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22amusement%22">amusement</a></span> <span class="facet_item" style="font-size:0.7em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22annual%22">annual</a></span> <span class="facet_item" style="font-size:0.7em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22anxious%22">anxious</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22atmo%22">atmo</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22atmos%22">atmos</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22atmosphere%22">atmosphere</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22atmospheric%22">atmospheric</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22attraction%22">attraction</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22attractions%22">attractions</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22background%22">background</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22background-sound%22">background-sound</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22background-track%22">background-track</a></span> <span class="facet_item" style="font-size:0.7em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22ballad%22">ballad</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22chatting%22">chatting</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22city%22">city</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22down-town%22">down-town</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22fair%22">fair</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22fairground%22">fairground</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22field-recording%22">field-recording</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22fun-fair%22">fun-fair</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22general-noise%22">general-noise</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22kermis%22">kermis</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22music%22">music</a></span> <span class="facet_item" style="font-size:1.56666666667em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22people%22">people</a></span> <span class="facet_item" style="font-size:1.13333333333em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22soundscape%22">soundscape</a></span> <span class="facet_item" style="font-size:2.0em"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20tag:%22white-noise%22">white-noise</a></span> 
+</p>
+
+
+        
+
+        
+
+        
+            <h3>samplerate</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20samplerate:%2248000%22">48000</a> (3)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20samplerate:%2296000%22">96000</a> (1)</li>
+</ul>
+
+
+
+        
+
+        
+
+        
+            <h3>bitrate</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20bitrate:%222250%22">2250</a> (2)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20bitrate:%222304%22">2304</a> (1)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20bitrate:%224500%22">4500</a> (1)</li>
+</ul>
+
+
+
+        
+
+
+        
+
+        
+            <h3>packs</h3>
+            
+ <ul>
+     <li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20grouping_pack:%2211550_fairground+Holland%22">fairground Holland</a> (3)</li><li class="facet_item"><a href="https://freesound.org/search/?g=1&amp;q=Fairground%20music&amp;f=tag:%22ambience%22%20grouping_pack:%227510_theme+park+efteling%22">theme park efteling</a> (1)</li>
+</ul>
+
+
+
+        
+
+        
+
+    </div>
+
+        
+            <div class="search_paginator">
+                <ul class="pagination"><p class="number_of_results">
+            
+
+            
+                4 sounds
+            
+		</p></ul>
+
+
+            </div>
+
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="245820">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/245/245820_1648170-lq.mp3" title="mp3 file">fairground ambience 140829_00.wav - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/245/245820_1648170-lq.ogg" title="ogg file">fairground ambience 140829_00.wav - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/245/245820_1648170_wave_M.png" title="waveform file">fairground ambience 140829_00.wav - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/245/245820_1648170_spec_M.jpg" title="spectrogram file">fairground ambience 140829_00.wav - spectrogram</a>
+<span class="duration" title="duration in seconds">29395.9</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="play toggle">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/245/245820_1648170_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                                  <div class="position-indicator" style="left: 10.0877%;"></div>                 <div class="time-indicator-container"><div class="time-indicator">-00:26</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/klankbeeld/sounds/245820/" title="fairground ambience 140829_00.wav">fairground ambience 1408...</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:0%;">Currently /5 Stars.</li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Background sound on a Dutch ('-Hertogenbosch) <b>Fairground</b>. More in this pack, old and modern Recorded in Den Bosch, Netherlands (Holland) ...</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/city/">city</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/general-noise/">general-noise</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/field-recording/">field-recording</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/chatting/">chatting</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/people/">people</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/kermis/">kermis</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/attractions/">attractions</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/background-track/">background-track</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/downtown/">downtown</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/attraction/">attraction</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/fairground/">fairground</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/music/">music</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/fun-fair/">fun-fair</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/fair/">fair</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/ambient/">ambient</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/ambience/">ambience</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/amusement/">amusement</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/white-noise/">white-noise</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/background-sound/">background-sound</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_245820" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/klankbeeld/">klankbeeld</a><br>
+        <span class="date">August 30th, 2014</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/klankbeeld/sounds/245820/downloaders/">37 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/klankbeeld/sounds/245820/#comments">0 comments</a>
+
+        <div class="sound_attributes">
+
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/klankbeeld/sounds/245820/similar/">
+                <img src="./FairMusic_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/klankbeeld/packs/11550/">
+                <img src="./FairMusic_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: fairground Holland">
+            </a>
+            
+            
+            
+            <!-- license icons -->
+            
+            
+            
+                <img class="cc_license" src="./FairMusic_files/by.png" width="16" height="16" alt="Creative Commons Attribution license" title="This sound is licensed under the Creative Commons Attribution license.">
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+                        <div class="sample_more_search_results"><img src="./FairMusic_files/plus.png" alt=""> <a href="https://freesound.org/search/?q=Fairground%20music&amp;f=grouping_pack:%2211550_fairground%20Holland%22%20tag:%22ambience%22&amp;s=%22score%20desc%22&amp;g=1&amp;advanced=0&amp;a_tag=&amp;a_filename=&amp;a_description=&amp;a_packname=&amp;a_soundid=&amp;a_username=">2 more results</a> in the same pack "fairground Holland"</div>
+                
+            
+                
+
+
+
+
+
+
+
+<div class="sample_player_small" id="120368">
+
+    
+
+    <div class="sample_player ">
+        <div class="small_player">
+            <div class="player small">
+    <div class="metadata">
+        <a class="mp3_file" href="https://freesound.org/data/previews/120/120368_1648170-lq.mp3" title="mp3 file">barrel organ of carousel 110507_25.wav - mp3 version</a>
+<a class="ogg_file" href="https://freesound.org/data/previews/120/120368_1648170-lq.ogg" title="ogg file">barrel organ of carousel 110507_25.wav - ogg version</a>
+<a class="waveform" href="https://freesound.org/data/displays/120/120368_1648170_wave_M.png" title="waveform file">barrel organ of carousel 110507_25.wav - waveform</a>
+<a class="spectrum" href="https://freesound.org/data/displays/120/120368_1648170_spec_M.jpg" title="spectrogram file">barrel organ of carousel 110507_25.wav - spectrogram</a>
+<span class="duration" title="duration in seconds">226816.0</span>
+
+    </div>
+<div class="controls">                     <a href="javascript:void(0)" title="play / pause" class="play toggle-alt on">play / pause</a>                     <a href="javascript:void(0)" title="loop" class="toggle loop">loop</a>                 </div>                 <div class="background" style="background-image: url(&quot;/data/displays/120/120368_1648170_wave_M.png&quot;); background-size: contain; background-repeat: no-repeat;"></div>                                  <div class="position-indicator" style="left: 44.9133%;"></div>                 <div class="time-indicator-container"><div class="time-indicator">-02:04</div></div></div>
+
+        </div><!-- .small_player -->
+
+        <div class="sound_title">
+            <div class="sound_filename">
+               <a class="title" href="https://freesound.org/people/klankbeeld/sounds/120368/" title="barrel organ of carousel 110507_25.wav">barrel organ of carousel...</a>
+            </div><!-- .sound_filename -->
+            <div class="sound_stars">
+               <ul class="star-rating">
+    <li class="current-rating" style="width:95%;">Currently /5 Stars.</li>
+    
+</ul>
+            </div><!-- .sound_stars -->
+
+            <div class="sound_description">
+                <p class="description">Barrel organ of a carousel, very old, with merry-go-round-bell in the beginning. Beautiful sound. A field recording with birds and ...</p>
+            </div><!-- .sound_description -->
+
+            <div class="sound_tags">
+
+                <ul class="tags">
+                    
+                        <li><a href="https://freesound.org/browse/tags/ambiance/">ambiance</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/ambience/">ambience</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/ambient/">ambient</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/annual/">annual</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/atmo/">atmo</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/atmos/">atmos</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/atmosphere/">atmosphere</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/attraction/">attraction</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/background/">background</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/background-sound/">background-sound</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/ballad/">ballad</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/barrel-organ/">barrel-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/birds/">birds</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/bourdon/">bourdon</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/bourdon-organ/">bourdon-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/bourdonorgan/">bourdonorgan</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/carousel/">carousel</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/carrousel/">carrousel</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/city/">city</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/environmental-sounds-research/">environmental-sounds-research</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/fair/">fair</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/fairground/">fairground</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/field/">field</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/field-recording/">field-recording</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/funfair/">funfair</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/funfair-organ/">funfair-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/gavioli/">gavioli</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/gavioli-organ/">gavioli-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/general/">general</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/general-noise/">general-noise</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/historic/">historic</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/historic-organ/">historic-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/hooter/">hooter</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/hurdy-gurdy/">hurdy-gurdy</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/kermis/">kermis</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/kermis-organ/">kermis-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/live/">live</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/machine/">machine</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/market/">market</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/music/">music</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/organ/">organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/orgel/">orgel</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/parish-fair/">parish-fair</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/parish-fair-organ/">parish-fair-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/pipe/">pipe</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/pipe-organ/">pipe-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/recording/">recording</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/rhythm/">rhythm</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/rhythmic/">rhythmic</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/sonography/">sonography</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/sound/">sound</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/soundscape/">soundscape</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/steam/">steam</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/steam-carousel/">steam-carousel</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/steet/">steet</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/stereo/">stereo</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/street-music/">street-music</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/town/">town</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/village/">village</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/whistle/">whistle</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/whistling/">whistling</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/white/">white</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/white-noise/">white-noise</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/wind/">wind</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/wind-organ/">wind-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/paris/">paris</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/street-organ/">street-organ</a></li>
+                    
+                        <li><a href="https://freesound.org/browse/tags/mechanical-music/">mechanical-music</a></li>
+                    
+                </ul>
+                <br style="clear: both;">
+
+            </div><!-- .sound_tags -->
+
+            <div id="bookmark_form_120368" class="bookmark_form"></div> <!-- to be filled dynamically with ajax -->
+
+            
+
+          </div><!-- .sound_title -->
+    </div><!-- .sample_player -->
+
+    <div class="sample_information ">
+        <a class="user" href="https://freesound.org/people/klankbeeld/">klankbeeld</a><br>
+        <span class="date">May 10th, 2011</span><br>
+        <span class="download_count"><a href="https://freesound.org/people/klankbeeld/sounds/120368/downloaders/">8868 downloads</a></span><br>
+        <a class="comments" href="https://freesound.org/people/klankbeeld/sounds/120368/#comments">22 comments</a>
+
+        <div class="sound_attributes">
+
+            
+
+            
+            <a class="similar" rel="nofollow" href="https://freesound.org/people/klankbeeld/sounds/120368/similar/">
+                <img src="./FairMusic_files/headphone--plus.png" width="16" height="16" alt="Similar" title="Similar Sounds">
+            </a>
+            
+            
+            <a class="pack" href="https://freesound.org/people/klankbeeld/packs/7510/">
+                <img src="./FairMusic_files/folder-open-document-music.png" width="16" height="16" alt="Pack" title="This sound belongs to the pack: theme park efteling">
+            </a>
+            
+            
+            
+            <a class="geotag" href="https://freesound.org/people/klankbeeld/sounds/120368/geotag/">
+                <img src="./FairMusic_files/geotag.png" width="16" height="16" alt="Geotagged" title="This sound has a geotag">
+            </a>
+            
+            <!-- license icons -->
+            
+            
+            
+                <img class="cc_license" src="./FairMusic_files/by.png" width="16" height="16" alt="Creative Commons Attribution license" title="This sound is licensed under the Creative Commons Attribution license.">
+            
+            
+            <!-- /license icons -->
+
+        </div><!-- .sound_attributes -->
+    </div><!-- .sample_information -->
+</div><!-- .sample_player_small -->
+
+
+
+
+
+
+                
+            
+
+            <div class="search_paginator">
+                <ul class="pagination"><p class="number_of_results">
+            
+
+            
+                4 sounds
+            
+		</p></ul>
+
+
+            </div>
+        
+
+
+    
+
+
+
+</div> <!-- END of Content area -->
+
+<br class="clear">
+
+
+
+        </div>
+        </div>
+
+    <div id="footer_wrapper">
+        <div id="footer">
+            <div id="cookie-bar">
+                <div style="float:left">
+                    <p>
+                        We use cookies to ensure you get the best experience on our website. By browsing our site you agree to our use of cookies.
+                        <br>
+                        For more information check out our <a href="https://freesound.org/help/cookies_policy">cookies policy</a>.
+                    </p>
+                </div>
+                <div style="float:right; margin-top:10px;margin-right:10px;">
+                    <button id="cookie-accept">Ok</button>
+                </div>
+                <br class="clear">
+
+            </div>
+            <div id="footer_links">
+                <a href="https://freesound.org/help/developers/">Developers</a>
+                <a href="http://blog.freesound.org/">Blog</a>
+                <a href="https://freesound.org/help/about/">About</a>
+                
+                <a href="https://freesound.org/help/tos_web/">Terms of use</a>
+            </div>
+            <div id="footer_credits">
+                Design by <a href="http://www.pixelshell.com/">Pixelshell</a>. Code by <a href="http://www.mtg.upf.edu/">MTG (UPF)</a>. Some Rights Reserved.
+            </div>
+            </div>
+        </div>
+
+        <div id="fsmodal" class="modal"></div>
+    
+
+
+</body></html>
